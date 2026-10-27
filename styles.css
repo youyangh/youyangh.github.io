@@ -199,3 +199,14 @@ a.pub__title:hover { color: var(--accent); }
   .explore__grid { grid-template-columns: 1fr; }
   .explore__card { padding: 22px; }
 }
+
+/* Company logos (Simple Icons, CC0), tinted with CSS masks */
+.case__meta .org { display: inline-flex; align-items: center; gap: 8px; color: var(--ink); }
+.logo {
+  width: 18px; height: 18px; flex: none; background: var(--logo-color, currentColor);
+  -webkit-mask: var(--logo) center / contain no-repeat; mask: var(--logo) center / contain no-repeat;
+}
+.logo--notion { --logo: url("https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/notion.svg"); }
+.logo--lyft { --logo: url("https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/lyft.svg"); --logo-color: #ff00bf; }
+.logo--google { --logo: url("https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/google.svg"); --logo-color: #4285f4; }
+.logo--facebook { --logo: url("https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/facebook.svg"); --logo-color: #0866ff; }
